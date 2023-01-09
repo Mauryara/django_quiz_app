@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+</head>
+<body>
+<div class="container mt-5 pt-5">
+    <div class="col-md-6 mx-auto">
+        <form>
+
+        <div class="form-group">
+            <label>Select Category</label>
+            <select name="category" class="form-control">
+                <option value="Choose">Choose</option>
+                {% for category in categories %}
+
+                <option value="{{category.category_name}}">{{category.category_name}}</option>>
+                {% endfor %}
+            </select>
+        </div>
+            <button class="btn btn-danger mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
