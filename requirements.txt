@@ -1,0 +1,4 @@
+django
+django_extensions
+vue js cdn
+bootstrap
